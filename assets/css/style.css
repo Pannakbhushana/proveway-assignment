@@ -31,11 +31,16 @@ body {
     margin-bottom: 20px;
     position: relative;
     transition: all 0.3s;
+    cursor: pointer;
+}
+
+.offer-box:hover{
+    background-color: #FFF9FA;
 }
 
 .offer-box.active {
     border-color: #FF6B82;
-    background: #fff8fa;
+    background: #FFF9FA;
 }
 
 .popular-tag {
@@ -161,6 +166,18 @@ select {
     border: none;
     padding: 14px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+.sponsor{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: end;
+}
+.sponsor>span {
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
 }
