@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2 class="title">YAY! It's BOGO</h2>
+        <div class="offer-box" data-price="10" data-units="1">
+            <div class="offer-header">
+                <label class="radio-wrap">
+                    <input type="radio" name="offer">
+                    <span class="custom-radio"></span>
+                </label>
+
+                <div class="offer-info">
+                    <div class="offer-line">
+                        <span class="units">1 Unit</span>
+                        <span class="discount-badge">10% Off</span>
+                    </div>
+                    <p class="subtext">Standard Price</p>
+                </div>
+
+                <div class="price-info">
+                    <p class="price">$10.00 USD</p>
+                    <p class="old-price">$24.00 USD</p>
+                </div>
+            </div>
+
+            <div class="offer-body"></div>
+        </div>
+
+        <div class="offer-box popular active" data-price="18" data-units="2">
+            <div class="popular-tag">MOST POPULAR</div>
+
+            <div class="offer-header">
+                <label class="radio-wrap">
+                    <input type="radio" name="offer" checked>
+                    <span class="custom-radio"></span>
+                </label>
+
+                <div class="offer-info">
+                    <div class="offer-line">
+                        <span class="units">2 Unit</span>
+                        <span class="discount-badge">20% Off</span>
+                    </div>
+                </div>
+
+                <div class="price-info">
+                    <p class="price">$18.00 USD</p>
+                    <p class="old-price">$24.00 USD</p>
+                </div>
+            </div>
+
+            <div class="offer-body">
+                <div class="var-row">
+                    <span>#1</span>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+
+                    <select>
+                        <option>Black</option>
+                        <option>Colour</option>
+                        <option>White</option>
+                    </select>
+                </div>
+
+                <div class="var-row">
+                    <span>#2</span>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+
+                    <select>
+                        <option>Colour</option>
+                        <option>Black</option>
+                        <option>White</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div class="offer-box" data-price="24" data-units="3">
+            <div class="offer-header">
+                <label class="radio-wrap">
+                    <input type="radio" name="offer">
+                    <span class="custom-radio"></span>
+                </label>
+
+                <div class="offer-info">
+                    <div class="offer-line">
+                        <span class="units">3 Unit</span>
+                        <span class="discount-badge">30% Off</span>
+                    </div>
+                </div>
+
+                <div class="price-info">
+                    <p class="price">$24.00 USD</p>
+                    <p class="old-price">$24.00 USD</p>
+                </div>
+            </div>
+
+            <div class="offer-body"></div>
+        </div>
+
+        <div class="footer">
+            <span class="delivery">Free Delivery</span>
+            <span class="total">Total : $18.00 USD</span>
+        </div>
+
+        <!-- Add to Cart -->
+        <button class="add-cart-btn">
+            + Add to Cart
+        </button>
+
+    </div>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
