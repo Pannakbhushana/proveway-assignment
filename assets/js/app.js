@@ -23,52 +23,44 @@ function activateBox(selectedBox) {
 
     selectedBox.classList.add("active");
 
-    // const price = selectedBox.dataset.price;
-    totalEl.textContent = `Total : $${18}.00 USD`;
+    const price = selectedBox.dataset.price;
+    totalEl.textContent = `Total : $${price}.00 USD`;
 }
 
-
-function createVariantRow() {
+function createVariantRows() {
     return `
         <div class="var-row">
-                    <span>#1</span>
-                    <select>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
+            <span>#1</span>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
 
-                    <select>
-                        <option>Black</option>
-                        <option>Colour</option>
-                        <option>White</option>
-                    </select>
-                </div>
+            <select>
+                <option>Black</option>
+                <option>Colour</option>
+                <option>White</option>
+            </select>
+        </div>
 
-                <div class="var-row">
-                    <span>#2</span>
-                    <select>
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
-                    </select>
+        <div class="var-row">
+            <span>#2</span>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
 
-                    <select>
-                        <option>Colour</option>
-                        <option>Black</option>
-                        <option>White</option>
-                    </select>
-                </div>
+            <select>
+                <option>Colour</option>
+                <option>Black</option>
+                <option>White</option>
+            </select>
+        </div>
     `;
 }
 
 document.querySelectorAll(".offer-body").forEach(offerBody => {
-    const variantsCount = offerBody.dataset.variants;
-
-    let rows = "";
-    for (let i = 1; i <= variantsCount; i++) {
-        rows = createVariantRow();
-    }
-
-    offerBody.innerHTML = rows;
+    offerBody.innerHTML = createVariantRows();
 });
