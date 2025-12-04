@@ -29,35 +29,42 @@ function activateBox(selectedBox) {
 
 function createVariantRows() {
     return `
-        <div class="var-row">
-            <span>#1</span>
-            <select>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-            </select>
+        <div class="var-headers">
+        <div class="header-item">Size</div>
+        <div class="header-item">Color</div>
+    </div>
 
-            <select>
-                <option>Black</option>
-                <option>Colour</option>
-                <option>White</option>
-            </select>
-        </div>
+    <div class="var-row">
+        <span class="var-index">#1</span>
 
-        <div class="var-row">
-            <span>#2</span>
-            <select>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-            </select>
+        <select class="var-select size-select">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+        </select>
 
-            <select>
-                <option>Colour</option>
-                <option>Black</option>
-                <option>White</option>
-            </select>
-        </div>
+        <select class="var-select color-select">
+            <option>Black</option>
+            <option>Colour</option>
+            <option>White</option>
+        </select>
+    </div>
+
+    <div class="var-row">
+        <span class="var-index">#2</span>
+
+        <select class="var-select size-select">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+        </select>
+
+        <select class="var-select color-select">
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+        </select>
+    </div>
     `;
 }
 
