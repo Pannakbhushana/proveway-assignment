@@ -1,7 +1,7 @@
 .offer-box {
     width: 341px;
     height: 74.11px;
-    border: 0.9px solid #e9e9e9;
+    border: 2px solid #e9e9e9;
     padding: 15px;
     margin-bottom: 20px;
     position: relative;
@@ -23,12 +23,11 @@
 
 .popular-tag {
     position: absolute;
-    right: 4px;
-    top: -13.5px;
-
+    right: 3.5px;
+    top: -8px;
     background: #FF6B82;
     color: #fff;
-    padding: 4px 12px 4px 12px;
+    padding: 3px 10px;
     font-size: 11px;
     font-weight: 600;
 
@@ -39,29 +38,23 @@
 .popular-tag::before {
     content: "";
     position: absolute;
-    left: -5.7px; 
+    left: -5px;
     top: 0;
     width: 0;
     height: 0;
-
-    /* inward angle */
-    border-bottom: 12px solid #D7445B; 
-    border-left: 6px solid transparent;
+    border-bottom: 7.5px solid #D7445B;
+    border-left: 5px solid transparent;
 }
 
-
-/* RIGHT angled inward cut */
 .popular-tag::after {
     content: "";
     position: absolute;
-    right: -5.5px;
+    right: -5px;
     top: 0;
     width: 0;
     height: 0;
-
-    /* inward angle */
-    border-bottom: 12px solid #D7445B;
-    border-right: 6px solid transparent;
+    border-bottom: 7.5px solid #D7445B;
+    border-right: 5px solid transparent;
 }
 
 .offer-header {
