@@ -120,7 +120,7 @@
 }
 
 .price-info {
-    text-align: right;
+    text-align: start;
 }
 
 .price {
@@ -176,7 +176,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 10px;
     padding-left: 4px;
-
+    background-color: #fff;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

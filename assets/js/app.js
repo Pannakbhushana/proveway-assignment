@@ -31,7 +31,7 @@ function createVariantRows() {
     return `
         <div class="var-headers">
         <div class="header-item">Size</div>
-        <div class="header-item">Color</div>
+        <div class="header-item">Colour</div>
     </div>
 
     <div class="var-row">
