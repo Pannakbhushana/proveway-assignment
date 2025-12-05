@@ -96,7 +96,7 @@
 }
 
 .units {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -108,8 +108,9 @@
 }
 
 .subtext {
+    width: 84px;
+    height: 15px;
     font-size: 12px;
-    color: #777;
     margin-top: 4px;
 }
 
@@ -118,12 +119,12 @@
 }
 
 .price {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .old-price {
-    font-size: 12px;
+    font-size: 10px;
     color: #aaa;
     text-decoration: line-through;
 }
@@ -175,6 +176,7 @@
 .delivery {
     color: #FF6B82;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .add-cart-btn {
