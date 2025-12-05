@@ -23,13 +23,45 @@
 
 .popular-tag {
     position: absolute;
-    right: -1px;
-    top: -12px;
+    right: 4px;
+    top: -13.5px;
+
     background: #FF6B82;
     color: #fff;
-    padding: 4px 10px;
+    padding: 4px 12px 4px 12px;
     font-size: 11px;
-    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+
+    border-radius: 0 0 4px 4px;
+    z-index: 3;
+}
+
+.popular-tag::before {
+    content: "";
+    position: absolute;
+    left: -5.7px; 
+    top: 0;
+    width: 0;
+    height: 0;
+
+    /* inward angle */
+    border-bottom: 12px solid #D7445B; 
+    border-left: 6px solid transparent;
+}
+
+
+/* RIGHT angled inward cut */
+.popular-tag::after {
+    content: "";
+    position: absolute;
+    right: -5.5px;
+    top: 0;
+    width: 0;
+    height: 0;
+
+    /* inward angle */
+    border-bottom: 12px solid #D7445B;
+    border-right: 6px solid transparent;
 }
 
 .offer-header {
@@ -153,12 +185,21 @@
 }
 
 .add-cart-btn {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background: #FF6B82;
     color: #fff;
     border: none;
     padding: 14px;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.add-cart-btn > span {
+    font-size: 25px;
+    margin-right: 10px;
 }
